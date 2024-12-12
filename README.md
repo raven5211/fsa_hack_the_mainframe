@@ -20,7 +20,7 @@ You know that the engineers at EmptyStack Solutions get dinner together at a loc
 1. `cd restaurants` to get into the `restaurants` directory.
 2. `ls` will show you a list of restaurants.
 3. Use `cd name_of_restaurant` to go into a restaurant.
-   1. For example, to visit **The Big Plate**, you would run `cd the_big_plate`.
+   1. For example, to visit **The Big Plate**, you would run `cd the_big_plate`
 4. Use `ls` inside a restaurant to see a list of customers.
 5. Use `cd ..` to go back out.
 6. Explore! What is the name of the restaurant you're looking for?
@@ -38,7 +38,7 @@ You know that the engineers at EmptyStack Solutions get dinner together at a loc
 Great! You've found the restaurant. Now, let's try scanning the EmptyStack employee badges. If you're lucky, someone might have forgotten to encrypt their badge. You're trying to get an ID number that you can use to access their EmptyStack Solutions account.
 
 1. Navigate your terminal into the restaurant you found earlier.
-2. Try scanning Alice's badge: `cat alice`.\
+2. Try scanning Alice's badge: `cat alice`\
    If you see `XXXXXXXXXXXXXXXXXXXXXX`, then you're on the right track! You'll have to scan someone else's badge, though. Alice is too smart to leave her badge unencrypted.
 3. Once you've scanned an unencrypted badge and found an ID number, take a screenshot of your terminal.
 4. Write the ID down. You'll need it in the next section.
@@ -61,11 +61,11 @@ The ID is a good start, but you'll need a password as well to access the account
 
 If you see a long list of credentials in your terminal, then you're on the right track! Instead of manually searching through the output, you can use a command to search for the account that corresponds to the ID you found earlier.
 
-You can **pipe** the output of one command into another with `|`. In this case, you want to use `cat` to read the file, and then `grep` to search the output of `cat`. For example, if you wanted to search for the name "Zoe" in a file named `roster.txt`, you would run `cat roster.txt | grep Zoe`.
+You can **pipe** the output of one command into another with `|`. In this case, you want to use `cat` to read the file, and then `grep` to search the output of `cat`. For example, if you wanted to search for the name "Zoe" in a file named `roster.txt`, you would run `cat roster.txt | grep Zoe`
 
 > [!NOTE]
 >
-> If you are on a Windows machine, use `findstr` instead of `grep`. For example, `cat roster.txt | findstr Zoe`.
+> If you are on a Windows machine, use `findstr` instead of `grep`: `cat roster.txt | findstr Zoe`
 
 1. Pipe `cat` into `grep` to find the username and password that corresponds to the ID you found earlier.
 2. Take a screenshot of your terminal once you've found the credentials.
