@@ -19,7 +19,7 @@ You know that the engineers at EmptyStack Solutions get dinner together at a loc
 
 1. `cd restaurants` to get into the `restaurants` directory.
 2. `ls` will show you a list of restaurants.
-3. Use `cd [name-of-restaurant]` to go into a restaurant.
+3. Use `cd name_of_restaurant` to go into a restaurant.
    1. For example, to visit **The Big Plate**, you would run `cd the_big_plate`.
 4. Use `ls` inside a restaurant to see a list of customers.
 5. Use `cd ..` to go back out.
@@ -63,7 +63,9 @@ If you see a long list of credentials in your terminal, then you're on the right
 
 You can **pipe** the output of one command into another with `|`. In this case, you want to use `cat` to read the file, and then `grep` to search the output of `cat`. For example, if you wanted to search for the name "Zoe" in a file named `roster.txt`, you would run `cat roster.txt | grep Zoe`.
 
-If you are on a Windows machine, use `findstr` instead of `grep`. For example, `cat roster.txt | findstr Zoe`.
+> [!NOTE]
+>
+> If you are on a Windows machine, use `findstr` instead of `grep`. For example, `cat roster.txt | findstr Zoe`.
 
 1. Pipe `cat` into `grep` to find the username and password that corresponds to the ID you found earlier.
 2. Take a screenshot of your terminal once you've found the credentials.
